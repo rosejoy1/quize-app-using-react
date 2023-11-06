@@ -1,0 +1,117 @@
+.ans-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    /* text-align: center; */
+  }
+ 
+  .ques{
+      border: 1px solid orange;
+      
+      width: 100%;
+      border-radius: 80px;
+      padding: 20px;
+      margin-bottom: 2rem;
+      overflow-x: hidden;
+  }
+  .ans{
+      border: 1px solid orange;
+      border-radius: 80px;
+      padding: 10px;
+      text-align: start;
+    
+      
+  }
+ 
+  .correct {
+    background-color: green;
+  }
+  
+  .wrong {
+    background-color: red;
+  }
+  
+
+  .ans:hover {
+    background-color: #ffcc00;
+  }
+  .ans.selected{
+    background-color: #ffcc00;
+ 
+  }
+  .btn1 {
+   
+    /* padding: 10px 20px; */
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color:green;
+    border-radius: 10px;
+    width: 40%;
+    height: 40px;
+    margin-top: 4rem;
+    text-align: center;
+
+  }
+  .btn {
+   
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color:green;
+    border-radius: 10px;
+    width: 100%;
+    height: 40px;
+
+  }
+  .final{
+    animation: slide-in 1s ease-out;
+    font-size: 20px;
+    font-weight: bold;
+    color: blue;
+  }
+  .main{
+    animation: slide-in 1s ease-in-out;
+  }
+  @keyframes slide-in {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  .btn1:hover {
+    background-color: #45a049;
+  }
+  .btn:hover {
+    background-color: #45a049;
+  }@media (max-width: 768px) {
+    .ans-content {
+      grid-template-columns: 1fr;
+    }
+  
+    .btn1,
+    .btn {
+      width: 80%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .ques {
+      font-size: 14px;
+    }
+  
+    .ans {
+      font-size: 12px;
+    }
+  
+    .btn1,
+    .btn {
+      width: 100%;
+    }
+  }
+
+  
