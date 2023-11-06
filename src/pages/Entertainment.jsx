@@ -294,7 +294,7 @@ const handleNextButtonClick = () => {
     return (
       <div>
       <h3 style={{ color: 'white', textAlign: 'center', marginTop: '1rem' }}>Question {currentQuestion + 1}</h3>
-      <div style={{ height: '100vh', color: 'white' }} className='d-flex justify-content-center align-items-center'>
+      <div style={{ height: '100vh', color: 'white' }} className='main d-flex justify-content-center align-items-center'>
         <div className="content">
           <div className='ques'>
             <h6 style={{ fontSize: '15px', fontWeight: 'bold' }}>{entertainment[currentQuestion].qs}</h6>
